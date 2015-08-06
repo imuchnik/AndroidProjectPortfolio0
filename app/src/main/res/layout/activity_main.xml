@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffdfeaf1"
+    android:importantForAccessibility="yes">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/parentPanel"
+        android:background="#6ccedcff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="My Nanodegree Apps!"
+            android:id="@+id/textView"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:textIsSelectable="true"
+            android:textColor="#ed000000" />
+
+        <Button
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:text="Spotify Streamer"
+            android:id="@+id/spotify_streamer_btn"
+            android:layout_weight="0.07"
+            android:layout_gravity="center_horizontal"
+            android:background="#f57c00"
+            android:clickable="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="dispayMessageSpotify"/>
+
+        <Button
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:text="Scores APP"
+            android:id="@+id/scores_app_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05"
+            android:layout_margin="10dp"
+            android:backgroundTint="#f57c00"
+            android:background="#f57c00"
+            android:onClick="dispayMessageScores"/>
+
+        <Button
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:text="Library App"
+            android:id="@+id/library_app_btn"
+            android:layout_weight="0.05"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="#f57c00"
+            android:onClick="dispayMessageLibrary"/>
+
+        <Button
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:text="Build it bigger"
+            android:id="@+id/build_it_bigger_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05"
+            android:layout_margin="10dp"
+            android:background="#f57c00"
+            android:onClick="dispayMessageBigger"/>
+
+        <Button
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:text="XYZ Reader"
+            android:id="@+id/xyz_reader_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05"
+            android:layout_margin="10dp"
+            android:background="#f57c00"
+            android:onClick="dispayMessageXYZ"/>
+
+        <Button
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:text="Capstone: My Own App"
+            android:id="@+id/my_app_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05"
+            android:background="#b71c1c"
+            android:layout_margin="20dp"
+            android:onClick="dispayMessageOWN"
+            android:clickable="true" />
+    </LinearLayout>
+
+
+</RelativeLayout>
