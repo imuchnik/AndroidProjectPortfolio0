@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 
@@ -39,47 +40,17 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /** Called when the user touches the button */
-    public void dispayMessageSpotify(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Spotify App!";
-        int duration = Toast.LENGTH_SHORT;
 
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-    public void dispayMessageScores(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Scores App!";
-        int duration = Toast.LENGTH_SHORT;
+    public void displayToast(View view) {
 
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }    public void dispayMessageLibrary(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Library App!";
-        int duration = Toast.LENGTH_SHORT;
+        Button button = (Button) view;
 
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }    public void dispayMessageBigger(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Build It Bigger App!";
-        int duration = Toast.LENGTH_SHORT;
+        String buttonText = (String) button.getText();
 
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-    public void dispayMessageOWN(View view) {
         Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Own Capstone App!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }    public void dispayMessageXYZ(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my XYZ Reader App!";
+        // open_app would add "Opens the app "
+        CharSequence text = getString(R.string.open_app)
+                + " " + buttonText;
         int duration = Toast.LENGTH_SHORT;
 
         Toast toast = Toast.makeText(context, text, duration);
